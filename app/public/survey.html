@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Survey</h1>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required="">
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photoURL" class="form-control" required="">
+
+        <h3><strong>Question 1</strong></h3>
+        <h4>It's Friday night, that means date night!</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q1" id="inlineFormCustomSelect">
+
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>You are hungry, so you fire up the grill.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q2" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>The neighbors next door are to be hated.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q3" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>It's TV time, let's put on a soap opera!</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q4" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>You love sports/sports players.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q5" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 6</strong></h3>
+        <h4>You love your family.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q6" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 7</strong></h3>
+        <h4>Your favorite color is... cheetah print, of course!</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q7" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 8</strong></h3>
+        <h4>You love your job.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q8" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 9</strong></h3>
+        <h4>You are a genius but no one appreciates your talent.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q9" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+        <h3><strong>Question 10</strong></h3>
+        <h4>Your feet stick for no apperent reason.</h4>
+        <select class="custom-select mr-sm-2 col-md-3 chosen-select" id="q10" id="inlineFormCustomSelect">
+            <option selected>Select an Option</option>
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+        </select>
+
+        <div class="col-auto my-1">
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <!-- <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+            <h2 id="match-name"></h2>
+            <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div> -->
+
+
+
+    <div class="modal" id="best-match-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="best-match-name"></h2>
+                    <img id="best-match-img" src="" width="400px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Table Link</a>
+
+        </div>
+    </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        // Form validation
+        function validateForm() {
+            var isValid = true;
+            // $(".form-control").each(function () {
+            //     if ($(this).val() === "") {
+            //         isValid = false;
+            //     }
+            // });
+
+            // $(".chosen-select").each(function () {
+
+            //     if ($(this).val() === "") {
+            //         isValid = false;
+            //     }
+            // });
+            return isValid;
+        }
+
+        // If all required fields are filled
+        if (validateForm()) {
+            // Create an object for the user"s data
+            var userInput = [{
+                "name": $("#name").val(),
+                "photo": $("#photoURL").val(),
+                "scores": [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            }];
+            console.log(userInput[0]);
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userInput[0], function (data) {
+                console.log("added!")
+                // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#best-match-name").text(data.name);
+                $("#best-match-img").attr("src", data.photo);
+
+                // Show the modal with the best match
+                $("#best-match-modal").modal("toggle");
+
+            });
+        } else {
+            alert("Fill out all fields before submitting!");
+        }
+    });
+</script>
